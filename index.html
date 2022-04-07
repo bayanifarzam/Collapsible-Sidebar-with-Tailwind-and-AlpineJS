@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body >
+
+  <div class="wrapper flex justify-between box-border " x-data="{isOpen:true}">
+    <div class="sidebar bg-gray-800 text-white h-screen transition-all duration-300 overflow-y-auto" :class="isOpen ? 'w-44 opacity-100 ':'w-0 opacity-0' ">
+        <div class=" p-2 transition-none flex justify-end">
+          <button class="p-2" @click.prevent="isOpen = ! isOpen">
+            <svg viewBox="0 0 20 20" class="w-6 h-6 fill-current text-gray-600" >
+
+              <path  fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+
+        <ul class=" transition-none ">
+          <li class="py-1 px-4 hover:bg-white hover:text-gray-800"><a href="#introduction">Introduction</a></li>
+          <li class="py-1 px-4 hover:bg-white hover:text-gray-800"><a href="#setup">Setup</a></li>
+          <li class="py-1 px-4 hover:bg-white hover:text-gray-800"><a href="#features">Features</a></li>
+          <li class="py-1 px-4 hover:bg-white hover:text-gray-800"><a href="#support">Support</a></li>
+
+       
+        </ul>
+    </div>
+    <div class="content h-screen  transition-all duration-300 overflow-y-hidden" :class="isOpen ? 'w-5/6':'w-full'">
+      <div class="flex justify-start p-2 w-full">
+        <button class="p-2 " @click.prevent="isOpen = ! isOpen" :class="isOpen ? 'hidden':''">
+          <svg viewBox="0 0 20 20" class="w-6 h-6 fill-current text-gray-500" >
+            <path  fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+
+          </svg>
+        </button>
+      </div>
+
+      <div class="p-4 overflow-y-auto h-full">
+
+        <section class="py-5 border-b-2" id="introduction">
+          <h2 class="text-2xl font-bold my-1">Intro Section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat vitae placeat fugit laborum magnam sit, accusamus error optio itaque? Natus at cupiditate tempora pariatur provident, suscipit nisi consequatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat fuga molestiae eum facere numquam sunt aperiam non voluptatum? Repellendus animi nostrum perspiciatis amet in, est tempora laborum repudiandae rem.
+          </p>
+        </section>
+
+        <section class="py-5 my-4 border-b-2" id="setup">
+          <h2 class="text-2xl font-bold my-1">Setup Section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat vitae placeat fugit laborum magnam sit, accusamus error optio itaque? Natus at cupiditate tempora pariatur provident, suscipit nisi consequatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat fuga molestiae eum facere numquam sunt aperiam non voluptatum? Repellendus animi nostrum perspiciatis amet in, est tempora laborum repudiandae rem.
+          </p>
+        </section>
+
+        <section class="py-5 my-4 border-b-2" id="features">
+          <h2 class="text-2xl font-bold my-1">Features Section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat vitae placeat fugit laborum magnam sit, accusamus error optio itaque? Natus at cupiditate tempora pariatur provident, suscipit nisi consequatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat fuga molestiae eum facere numquam sunt aperiam non voluptatum? Repellendus animi nostrum perspiciatis amet in, est tempora laborum repudiandae rem.
+          </p>
+        </section>
+
+        <section class="py-5 my-4 border-b-2" id="support">
+          <h2 class="text-2xl font-bold my-1">Support Section</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim atque perferendis facere. Porro labore commodi aliquid odio fuga, molestiae ut. Similique quidem voluptatem iste, sequi totam asperiores voluptate doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti dolorum voluptates sapiente laborum eos inventore est ex, fugiat id error ipsam incidunt ullam. Porro recusandae reiciendis praesentium laudantium sunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat vitae placeat fugit laborum magnam sit, accusamus error optio itaque? Natus at cupiditate tempora pariatur provident, suscipit nisi consequatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat fuga molestiae eum facere numquam sunt aperiam non voluptatum? Repellendus animi nostrum perspiciatis amet in, est tempora laborum repudiandae rem.
+          </p>
+        </section>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+       
+<!-- <div class="w-32 h-32 mx-auto mt-10" x-data="{src:'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'}">
+    <form class="flex flex-col items-center justify-center ">
+          <img class="h-32 w-full border border-blue-500 rounded-t-xl" :src="src" alt="Current profile photo" />
+        <label class="bg-blue-500 drop-shadow-2xl shadow-white px-7 py-1 text-sm rounded-b-xl w-full text-center">
+
+          <span class="">Change</span>
+          <input type="file" class="hidden"
+         @change="src = URL.createObjectURL($event.target.files[0])"
+          />
+        </label>
+      </form>
+</div> -->
+
+
+    <script src="public/script.js"></script>
+ 
+</body>
+</html>

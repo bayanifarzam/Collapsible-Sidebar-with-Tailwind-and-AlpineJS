@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+
+    <div class="wrapper flex" x-data="{isOpen:true}">
+        <div id="sidebar" class=" bg-gray-800 h-screen overflow-y-auto transition-all duration-300"
+            :class="isOpen?'w-48':'w-0'">
+            <div class="h-auto w-full flex justify-end p-4 text-white">
+                <button  @click.prevent="isOpen = !isOpen">x</button>
+            </div>
+            <ul>
+                <li>Introduction</li>
+                <li>Introduction</li>
+                <li>Introduction</li>
+            </ul>
+        </div>
+        <div id="body" class="w-full bg-gray-100 h-screen overflow-y-auto transition-all duration-300">
+            <div class="h-auto w-full flex justify-start p-4 ">
+                <button @click.prevent="isOpen = !isOpen">x</button>
+            </div>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facilis ut dolores quas, nobis hic modi voluptate pariatur ullam alias animi, eligendi illo porro? Ipsam nihil mollitia similique aliquam dicta.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ipsa nam consectetur quidem maiores ipsam pariatur dolore quis amet, deleniti possimus commodi eos odit officia necessitatibus odio laudantium doloribus. Accusantium.
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="public/script.js"></script>
+</body>
+</html>
